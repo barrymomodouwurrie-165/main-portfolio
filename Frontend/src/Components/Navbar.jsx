@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import profile from "../assets/myprofile.jpg"
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-100 bg-[#1a103d] w-full px-4 py-6 border-b border-purple-400/20 shadow-sm">
+    <div className="fixed top-0 z-[500] bg-[#1a103d] w-full px-4 py-4 border-b border-purple-400/20 shadow-sm">
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-between gap-2">
           <img src={profile} alt="A profile picture" className="w-[80px] h-[80px] rounded-full object-left-top object-cover"/>
