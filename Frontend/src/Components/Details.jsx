@@ -13,7 +13,7 @@ const Details = () => {
   ];
   return (
     <div className="max-w-5xl mx-auto px-2 py-8">
-      <div className="font-mono border border-base-content/5 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
+      <div className="font-mono border border-orange-600/5 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
         <div className="flex items-center justify-between bg-base-content/20 border-b border-base-content/10 rounded-t-lg px-6 py-2">
           <div className="flex items-center gap-2">
             <FaCircle size={18} className="text-orange-600" />

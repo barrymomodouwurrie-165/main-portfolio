@@ -3,11 +3,12 @@ import { FaCircle } from "react-icons/fa";
 import Skills from "../Components/Skills";
 import { HiChevronDoubleDown } from "react-icons/hi";  
 import Details from "../Components/Details";
+import Footer from "../Components/Footer";
 
 
 const LandingPage = () => {
   return (
-    <div className="min-h-view py-40">
+    <div className="min-h-view pt-40">
       <Navbar />
       <div className="flex flex-col items-center text-center py-10">
         <div className="flex items-center gap-2 mx-auto text-orange-500 border border-orange-600/20 bg-orange-200/10 px-4 rounded-3xl font-mono">
@@ -41,7 +42,8 @@ const LandingPage = () => {
       </div>
       <HiChevronDoubleDown size={24} className="relative mx-auto animate-bounce mb-[100px] z-0"/>
       <Skills />
-      <Details/>
+      <Details />
+      <Footer/>
     </div>
   );
 };
