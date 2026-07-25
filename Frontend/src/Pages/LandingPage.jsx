@@ -1,10 +1,10 @@
 import Navbar from "../Components/Navbar";
 import { FaCircle } from "react-icons/fa";
 import Skills from "../Components/Skills";
-import { HiChevronDoubleDown } from "react-icons/hi";  
+import { HiChevronDoubleDown } from "react-icons/hi";
 import Details from "../Components/Details";
 import Footer from "../Components/Footer";
-
+import Works from "../Components/Works";
 
 const LandingPage = () => {
   return (
@@ -40,10 +40,14 @@ const LandingPage = () => {
           </button>
         </div>
       </div>
-      <HiChevronDoubleDown size={24} className="relative mx-auto animate-bounce mb-[100px] z-0"/>
+      <HiChevronDoubleDown
+        size={24}
+        className="relative mx-auto animate-bounce mb-[100px] z-0"
+      />
       <Skills />
       <Details />
-      <Footer/>
+      <Works />
+      <Footer />
     </div>
   );
 };
