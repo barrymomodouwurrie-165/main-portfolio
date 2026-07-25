@@ -26,7 +26,7 @@ const Skills = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col border border-orange-600/20 p-6 rounded-lg bg-secondary/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-30 ">
+          <div className="flex flex-col border border-orange-600/20 p-6 rounded-lg bg-secondary/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 ">
             <div className="flex items-start justify-between">
               <div className="p-4 text-orange-600 border border-orange-500/20 rounded-md bg-orange-500/10">
                 <FaPython size={34} />

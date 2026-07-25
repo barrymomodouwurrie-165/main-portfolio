@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar";
 import { FaCircle } from "react-icons/fa";
 import Skills from "../Components/Skills";
 import { HiChevronDoubleDown } from "react-icons/hi";  
+import Details from "../Components/Details";
 
 
 const LandingPage = () => {
@@ -40,6 +41,7 @@ const LandingPage = () => {
       </div>
       <HiChevronDoubleDown size={24} className="relative mx-auto animate-bounce mb-[100px] z-0"/>
       <Skills />
+      <Details/>
     </div>
   );
 };
