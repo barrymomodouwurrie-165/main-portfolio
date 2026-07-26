@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div data-theme="synthwave" className="min-h-view">
+      <div data-theme="synthwave" className="min-h-screen">
         <LandingPage />
       </div>
     </>
