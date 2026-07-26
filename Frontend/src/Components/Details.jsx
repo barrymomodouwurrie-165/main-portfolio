@@ -20,12 +20,12 @@ const Details = () => {
             <FaCircle size={14} className="text-yellow-600" />
             <FaCircle size={14} className="text-green-600" />
           </div>
-          <span className="flex-1 text-center">
+          <span className="text-sm md:text-base flex-1 text-center">
             momodou_barry — -zsh — 80×24
           </span>
         </div>
         <div className="py-8 px-6">
-          <div className="flex items-center gap-2 md:text-lg">
+          <div className="flex items-center gap-2 text-sm md:text-lg">
             <FiArrowRight className="text-green-600" />
             <span className="text-blue-600">~</span>
             <span className="text-purple-500">cat</span>
@@ -36,35 +36,35 @@ const Details = () => {
             {Info &&
               Info.map((info) => {
                 return (
-                  <div key={info.id} className="flex md:items-center px-4">
-                    <span className="text-orange-600 md:text-lg">
+                  <div key={info.id} className="flex md:items-center px-3">
+                    <span className="text-orange-600 text-xs md:text-lg">
                       "{info.name}"
                     </span>
-                    <span className="mr-2 text-lg">:</span>
-                    <span className="text-secondary md:text-lg">
+                    <span className="mr-2 text-xs md:text-lg">:</span>
+                    <span className="text-secondary text-xs md:text-lg">
                       "{info.content}"
                     </span>
-                    <span className=" text-lg">,</span>
+                    <span className=" text-xs md:text-lg">,</span>
                   </div>
                 );
               })}
             <span>&#125;</span>
           </div>
-          <div className="flex items-center gap-2 md:text-lg py-2">
+          <div className="flex items-center gap-2 text-sm md:text-lg py-2">
             <FiArrowRight className="text-green-600" />
             <span className="text-blue-600">~</span>
             <span className="text-purple-500">ls</span>
             <span>projects/</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-center justify-between px-6 mr-8">
-            <span className="text-secondary md:text-lg">distributed_sys/</span>
-            <span className="text-secondary md:text-lg">
+            <span className="text-secondary text-sm md:text-lg">distributed_sys/</span>
+            <span className="text-secondary text-sm md:text-lg">
               knust_portal_redesign/
             </span>
-            <span className="text-secondary md:text-lg">api_gateway_v1/</span>
-            <span className="text-secondary md:text-lg">neural_net_lab/</span>
+            <span className="text-secondary text-sm md:text-lg">api_gateway_v1/</span>
+            <span className="text-secondary text-sm md:text-lg">neural_net_lab/</span>
           </div>
-          <div className="flex items-center gap-2 text-lg mt-2">
+          <div className="flex items-center gap-2 text-sm md:text-lg mt-2">
             <FiArrowRight className="text-green-600" />
             <span className="text-blue-600 animate-pulse">~</span>
             <span className="inline-block w-2 h-4 bg-purple-400 ml-1 animate-pulse" />

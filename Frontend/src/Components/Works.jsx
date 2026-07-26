@@ -55,7 +55,7 @@ const Works = () => {
   return (
     <div className="max-w-5xl mx-auto px-2 py-14">
       <div className="flex items-center justify-between mb-10">
-        <span className="text-2xl font-bold">Featured Work</span>
+        <span className="text-lg md:text-2xl font-bold">Featured Work</span>
         <div className="border border-secondary/10 flex-1 ml-6"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -77,7 +77,7 @@ const Works = () => {
                           : ""
                   }
                   alt=""
-                  className="w-[500px] h-[300px] rounded-t-lg object-center transition-transform duration-300 ease-in-out hover:scale-105"
+                  className="w-[100%] h-[300px] rounded-t-lg object-center transition-transform duration-300 ease-in-out hover:scale-105"
                 />
                 <div className="absolute bottom-40 left-6">
                   <div
@@ -86,13 +86,13 @@ const Works = () => {
                     {project.title}
                   </div>
                   <span
-                    className={`text-xl font-bold ${TextColors[project.color]}`}
+                    className={`text-base md:text-xl font-bold ${TextColors[project.color]}`}
                   >
                     {project.subTitle}
                   </span>
                 </div>
                 <div className="flex flex-col gap-6 my-4 ml-2">
-                  <span>{project.description}</span>
+                  <span className="text-sm md:text-lg">{project.description}</span>
                   <div className="flex items-center gap-4">
                     <span
                       className={`rounded-md px-2 ${ToolColors[project.color]}`}

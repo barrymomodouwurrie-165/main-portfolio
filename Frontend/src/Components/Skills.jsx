@@ -6,12 +6,14 @@ const Skills = () => {
     <div className="max-w-5xl mx-auto px-2 py-6">
       <div className="flex items-center justify-between gap-4">
         <div className=" flex-1 border border-base-content/5"></div>
-        <span className="text-4xl text-orange-500 font-bold">TECH_STACK</span>
+        <span className=" text-2xl md:text-4xl text-orange-500 font-bold">
+          TECH_STACK
+        </span>
         <div className=" flex-1 border border-base-content/5"></div>
       </div>
       <div className="flex flex-col gap-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-4">
-          <div className="md:max-w-[500px] flex flex-col border  border-orange-600/5 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 p-6  rounded-lg bg-blue-950/10 ">
+          <div className="md:max-w-[500px] flex flex-col border  border-orange-600/5 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 p-4 md:p-6  rounded-lg bg-blue-950/10 ">
             <div className="flex items-start justify-between">
               <div className="p-4 border rounded-md border-secondary/20 bg-blue-600/10 text-blue-600">
                 <FaReact size={34} />
@@ -26,7 +28,7 @@ const Skills = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col border border-orange-600/5 p-6 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 ">
+          <div className="flex flex-col border border-orange-600/5 p-4 md:p-6 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 ">
             <div className="flex items-start justify-between">
               <div className="p-4 text-orange-600 border border-orange-500/20 rounded-md bg-orange-500/10">
                 <FaPython size={34} />
@@ -39,7 +41,7 @@ const Skills = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col border border-orange-600/5 p-6 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 ">
+          <div className="flex flex-col border border-orange-600/5 p-4 md:p-6 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300 ">
             <div className="flex items-start justify-between">
               <div className="p-4 text-purple-600 rounded-md border border-purple-500/20 bg-purple-500/10">
                 <FaJava size={34} />
@@ -77,13 +79,13 @@ const Skills = () => {
             </div>
             <div className="flex ml-20">
               <div className="p-4 bg-base-100 text-purple-600 border border-black rounded-full relative z-10 ">
-                <FiCloud size={24} />
+                <FiCloud className="size-4 md:size-10" />
               </div>
               <div className="p-4 bg-base-100 text-secondary border border-black rounded-full -translate-x-4 relative z-20">
-                <FiBox size={24} />
+                <FiBox className="size-4 md:size-10" />
               </div>
               <div className="p-4 bg-base-100 text-orange-600 border border-black rounded-full -translate-x-8 relative z-30 ">
-                <FiTerminal size={24} />
+                <FiTerminal className="size-4 md:size-10" />
               </div>
             </div>
           </div>
