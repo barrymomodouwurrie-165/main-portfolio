@@ -6,9 +6,9 @@ import Details from "../Components/Details";
 import Footer from "../Components/Footer";
 import Works from "../Components/Works";
 
-const LandingPage = () => {
+const LandingPage = ({Info}) => {
   return (
-    <div className="min-h-screen mx-auto w-full pt-40 overflow-hidden">
+    <div className="min-h-screen mx-auto pt-40 overflow-hidden">
       <Navbar />
       <div className="flex flex-col items-center text-center py-10">
         <div className="flex items-center gap-2 mx-auto text-orange-500 border border-orange-600/20 bg-orange-200/10 px-4 rounded-3xl font-mono">
@@ -45,7 +45,7 @@ const LandingPage = () => {
         className="relative mx-auto animate-bounce mb-[100px] z-0"
       />
       <Skills />
-      <Details />
+      <Details Info={Info} />
       <Works />
       <Footer />
     </div>

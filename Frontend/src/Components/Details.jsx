@@ -1,16 +1,8 @@
 import { FaCircle } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
-const Details = () => {
-  const Info = [
-    { id: "1", name: "name", content: "Momodou Wurrie Barry" },
-    { id: "2", name: "university", content: "KNUST" },
-    { id: "3", name: "major", content: "computer science" },
-    { id: "4", name: "degree", content: "Bachelors degree" },
-    { id: "5", name: "focus", content: ["Software Engineering", " &", " AI"] },
-    { id: "6", name: "philosophy", content: "Optimize everything." },
-    { id: "7", name: "email", content: "barrymomodouwurry165@gmail.com" },
-  ];
+const Details = ({Info}) => {
+  
   return (
     <div className="max-w-5xl mx-auto px-2 py-14">
       <div className="font-mono border border-orange-600/5 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
