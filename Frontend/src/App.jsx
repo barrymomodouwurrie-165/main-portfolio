@@ -1,6 +1,8 @@
 import LandingPage from "./Pages/LandingPage";
 import AboutPage from "./Pages/AboutPage";
-import {Routes, Route} from "react-router"
+import Contact from "./Pages/Contact";
+import { Routes, Route } from "react-router";
+
 import "./App.css";
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage Info={Info} />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </div>
   );

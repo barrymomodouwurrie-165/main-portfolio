@@ -25,7 +25,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen mx-auto pt-32 overflow-hidden">
       <Navbar />
-      <div className=" max-w-5xl mx-auto flex flex-col gap-6 mt-4 mb-8">
+      <div className="max-w-5xl mx-auto flex flex-col gap-6 mt-4 mb-8">
         <div className="max-w-[250px] flex items-center justify-center gap-2 border border-orange-600/20 rounded-lg text-center py-2 bg-orange-600/5 text-orange-600 ">
           <FaGraduationCap />
           <span>ACADEMIC ODYSSEY</span>
