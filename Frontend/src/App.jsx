@@ -1,9 +1,10 @@
+import { Routes, Route } from "react-router";
 import LandingPage from "./Pages/LandingPage";
 import AboutPage from "./Pages/AboutPage";
 import Contact from "./Pages/Contact";
-import { Routes, Route } from "react-router";
+import Projects from "./Pages/Projects";
 
-import "./App.css";
+// import "./App.css";
 
 function App() {
   const Info = [
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<LandingPage Info={Info} />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
       </Routes>
     </div>
   );
