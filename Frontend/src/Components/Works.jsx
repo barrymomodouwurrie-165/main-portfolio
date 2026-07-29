@@ -24,16 +24,6 @@ const Works = () => {
       tools: ["ReactJs", "Tailwind", "ExpressJs", "Java"],
       color: "Orange",
     },
-    {
-      id: 3,
-      image: "School",
-      title: "MANAGEMENT SYSTEM",
-      subTitle: "School Website management system",
-      description:
-        "A WEB-BASED INTELLIGENT SCHOOL MANAGEMENT SYSTEM WITH REAL-TIME ATTENDANCE, RESULT PROCESSING AND PARENT NOTIFICATION",
-      tools: ["ReactJs", "Tailwind", "ExpressJs"],
-      color: "Green",
-    },
   ];
 
   const BgColors = {

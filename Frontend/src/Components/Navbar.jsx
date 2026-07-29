@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import profile from "../assets/myprofile.jpg";
@@ -11,6 +11,10 @@ const Navbar = () => {
     { name: "Projects", to: "/projects" },
     { name: "Contact", to: "/contact" },
   ];
+
+const linkClass = ({isActive}) => `btn btn-ghost btn-sm ${isActive? "underline underline-offset-4 text-secondary": ""}`
+
+
   return (
     <div className="fixed top-0 z-[500] bg-[#1a103d] w-full px-4 py-4 border-b border-purple-400/20 shadow-sm">
       <div className="flex items-center justify-between">
@@ -29,13 +33,13 @@ const Navbar = () => {
             Links.map((link) => {
               return (
                 
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.to}
-                className="btn btn-ghost btn-sm"
+                className={linkClass}
               >
                 {link.name}
-              </Link>
+              </NavLink>
               )
             })}
           <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50">
@@ -60,14 +64,14 @@ const Navbar = () => {
             Links.map((link) => {
               return (
                 
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.to}
-                className="btn btn-ghost btn-sm"
+                className={linkClass}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </Link>
+              </NavLink>
               )
             })}
           <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50">
