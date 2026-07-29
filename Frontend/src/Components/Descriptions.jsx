@@ -14,6 +14,43 @@ const Descriptions = () => {
     { id: "5", name: "status", content: "Final Year" },
     { id: "6", name: "focus", content: ["Software Engineering", " &", " AI"] },
   ];
+  const Milestones = [
+    {
+      id: "1",
+      date: "2022/23",
+      title: "Enrolled at KNUST",
+      content:
+        "Commenced Bachelor of Science in Computer Science, laying thefoundational groundwork in discrete mathematics and computational theory.",
+      color: "Purple",
+    },
+    {
+      id: "2",
+      date: "2023/24",
+      title: "Participated in a Mobile App Dev",
+      content:
+        "Collaborated with a cross-functional team to design and develop a mobile clone of the eBay application using React Native, replicating core e-commerce features such as product listings, search, and user navigation.",
+      color: "Blue",
+    },
+    {
+      id: "3",
+      date: "current",
+      title: "Final Year Project Phase",
+      content:
+        "An intelligent embedded security system that combines multi-factor authentication, real-time sensor correlation, and AI-based threat classification with an offline encrypted logging mechanism and a live web dashboard, in order to provide a resilient, affordable, and unbiased alternative to conventional single-factor access-control systems.",
+      color: "Orange",
+    },
+  ];
+
+  const BorderColors = {
+    Purple: "border-purple-600 text-purple-600",
+    Blue: "border-blue-600 text-blue-600",
+    Orange: "border-orange-600 text-orange-600",
+  };
+  const TextColors = {
+    Purple: "text-purple-600",
+    Blue: "text-blue-600",
+    Orange: "text-orange-600",
+  };
   return (
     <div className="max-w-5xl mx-auto px-2 py-6">
       <div className="grid grid-cols-1 md:grid-cols-2 py-8 gap-4">
@@ -25,59 +62,26 @@ const Descriptions = () => {
               <FiTrendingUp size={32} className="text-base-content/30" />
             </div>
           </div>
-          <div className="flex items-start">
-            <div className="rounded-full border border-s-4 p-2 border-purple-600 translate-y-4 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
-              {" "}
-              <FaDotCircle className="text-purple-600" />
-            </div>
-            <div className="flex flex-col gap-2 mx-4">
-              <span className="text-base-content/70">2022/23</span>
-              <span className="text-xl font-bold">Enrolled at KNUST</span>
-              <p className="text-base-content/70">
-                Commenced Bachelor of Science in Computer Science, laying the
-                foundational groundwork in discrete mathematics and
-                computational theory.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="rounded-full border border-s-4 p-2 border-blue-600 translate-y-4 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
-              {" "}
-              <FaDotCircle className="text-blue-600" />
-            </div>
-            <div className="flex flex-col gap-2 mx-4">
-              <span className="text-blue-600">2023/24</span>
-              <span className="text-xl font-bold">
-                Participated in a Mobile App Dev
-              </span>
-              <p className="text-base-content/70">
-                Collaborated with a cross-functional team to design and develop
-                a mobile clone of the eBay application using React Native,
-                replicating core e-commerce features such as product listings,
-                search, and user navigation.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="rounded-full border border-s-4 p-2 border-orange-600 translate-y-4 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
-              {" "}
-              <FaDotCircle className="text-orange-600" />
-            </div>
-            <div className="flex flex-col gap-2 mx-4">
-              <span className="text-orange-500">current</span>
-              <span className="text-xl font-bold">
-                Final Year Project Phase
-              </span>
-              <p className="text-base-content/70">
-                An intelligent embedded security system that combines
-                multi-factor authentication, real-time sensor correlation, and
-                AI-based threat classification with an offline encrypted logging
-                mechanism and a live web dashboard, in order to provide a
-                resilient, affordable, and unbiased alternative to conventional
-                single-factor access-control systems.
-              </p>
-            </div>
-          </div>
+          {Milestones &&
+            Milestones.map((milestone) => {
+              return (
+                <div key={milestone.id} className="flex items-start">
+                  <div
+                    className={`rounded-full border border-s-4 p-2 ${BorderColors[milestone.color]} translate-y-4 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300`}
+                  >
+                    {" "}
+                    <FaDotCircle />
+                  </div>
+                  <div className="flex flex-col gap-2 mx-4">
+                    <span className={`${TextColors[milestone.color]}`}>
+                      {milestone.date}
+                    </span>
+                    <span className="text-xl font-bold">{milestone.title}</span>
+                    <p className="text-base-content/70">{milestone.content}</p>
+                  </div>
+                </div>
+              );
+            })}
         </div>
         <div className="flex flex-col gap-4">
           <div className="font-mono border border-orange-600/5 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">

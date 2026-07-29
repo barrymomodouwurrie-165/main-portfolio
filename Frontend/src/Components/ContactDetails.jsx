@@ -53,7 +53,7 @@ const ContactDetails = () => {
               <textarea
                 type="text"
                 rows="60"
-                className="input input-bordered w-full h-[200px] md:h-[300px] pt-2"
+                className="input input-bordered w-full max-h-[200px] md:max-h-[300px] min-h-[100px] md:min-h-[300px] pt-2"
                 placeholder="How can we push the bounderies together?"
               />
             </div>
