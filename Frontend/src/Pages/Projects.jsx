@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen mx-auto pt-32 overflow-hidden">
       <Navbar />
-      <div className="max-w-5xl mx-auto flex flex-col gap-4 mt-4 mb-8">
+      <div className="max-w-5xl mx-auto flex flex-col px-2 gap-4 mt-4 mb-8">
         <div className="flex items-center">
           <div className="border border-purple-600 flex-1 max-w-14"></div>
           <span className="text-secondary font-serif ml-4">

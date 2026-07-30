@@ -5,8 +5,9 @@ import { HiChevronDoubleDown } from "react-icons/hi";
 import Details from "../Components/Details";
 import Footer from "../Components/Footer";
 import Works from "../Components/Works";
+import { Link } from "react-router";
 
-const LandingPage = ({Info}) => {
+const LandingPage = ({ Info }) => {
   return (
     <div className="min-h-screen mx-auto pt-40 overflow-hidden">
       <Navbar />
@@ -29,12 +30,15 @@ const LandingPage = ({Info}) => {
           web architectures.
         </p>
         <div className="max-w-xl mx-auto flex items-center justify-between gap-4 py-6">
-          <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50">
+          <Link
+            to={"/projects"}
+            className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50"
+          >
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             <span className="inline-flex z-0 h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-6 md:px-8 py-1 text-xl font-medium text-secondary backdrop-blur-3xl">
               See my work
             </span>
-          </button>
+          </Link>
           <button className="inline-flex h-12 items-center justify-center rounded-md text-xl border border-gray-800 bg-gradient-to-t from-[#8678f9] from-0% to-[#c7d2fe] px-4 md:px-6 font-medium text-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 ">
             Download CV
           </button>

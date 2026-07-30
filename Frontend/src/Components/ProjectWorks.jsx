@@ -56,7 +56,7 @@ const ProjectWorks = () => {
   };
   return (
     <div className="max-w-5xl mx-auto py-10 mb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
         {Projects &&
           Projects.map((project) => {
             return (
@@ -97,7 +97,7 @@ const ProjectWorks = () => {
 
                 <div className="flex flex-col gap-4 mt-6 mx-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-xl md:text-3xl font-bold ">
+                    <span className="text-lg md:text-3xl font-bold ">
                       {project.subTitle}
                     </span>
                     <div className="text-purple-600">
@@ -111,7 +111,7 @@ const ProjectWorks = () => {
                     </div>
                   </div>
                   <div>
-                    <span className="text-base-content/70">
+                    <span className="text-base-content/70 text-sm md:text-lg">
                       {project.description}
                     </span>
                   </div>

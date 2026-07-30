@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Contact", to: "/contact" },
   ];
 
-const linkClass = ({isActive}) => `btn btn-ghost btn-sm ${isActive? "underline underline-offset-4 text-secondary": ""}`
+const linkClass = ({isActive}) => `btn btn-ghost btn-sm ${isActive? "italic underline underline-offset-4 text-secondary": ""}`
 
 
   return (

@@ -1,8 +1,22 @@
 import { FaCircle } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
-const Details = ({Info}) => {
-  
+const Details = ({ Info }) => {
+  const projects = [
+    {
+      id: "1",
+      name: "ai_job_portal/",
+    },
+    {
+      id: "2",
+      name: "door_security_monitor_sys/",
+    },
+    {
+      id: "3",
+      name: "school_management_sys/",
+    },
+  ];
+
   return (
     <div className="max-w-5xl mx-auto px-2 py-14">
       <div className="font-mono border border-orange-600/5 rounded-lg bg-blue-950/10 hover:shadow-[0_0_20px_rgba(210,187,255,0.15)] transition-shadow duration-300">
@@ -49,12 +63,17 @@ const Details = ({Info}) => {
             <span>projects/</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-center justify-between px-6 mr-8">
-            <span className="text-secondary text-sm md:text-lg">distributed_sys/</span>
-            <span className="text-secondary text-sm md:text-lg">
-              knust_portal_redesign/
-            </span>
-            <span className="text-secondary text-sm md:text-lg">api_gateway_v1/</span>
-            <span className="text-secondary text-sm md:text-lg">neural_net_lab/</span>
+            {projects &&
+              projects.map((project) => {
+                return (
+                  <span
+                    key={project.id}
+                    className="text-secondary text-sm md:text-lg"
+                  >
+                    {project.name}
+                  </span>
+                );
+              })}
           </div>
           <div className="flex items-center gap-2 text-sm md:text-lg mt-2">
             <FiArrowRight className="text-green-600" />
