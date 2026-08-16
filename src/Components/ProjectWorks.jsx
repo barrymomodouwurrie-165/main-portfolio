@@ -9,6 +9,7 @@ import {
   FaSpinner,
   FaTerminal,
 } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const ProjectWorks = () => {
   const Projects = [
@@ -124,8 +125,13 @@ const ProjectWorks = () => {
                       )}
                       <span className="ml-2">{project.status}</span>
                     </div>
-                    <div >
-                      <button className="btn btn-outline btn-sm text-purple-600">
+                    <div>
+                      <button
+                        onClick={() =>
+                          toast.error("Sorry, You can't view the codes!")
+                        }
+                        className="btn btn-outline btn-sm text-purple-600"
+                      >
                         <span>VIEW CODE</span>
                         <FaTerminal size={18} className="hover:outline" />
                       </button>
