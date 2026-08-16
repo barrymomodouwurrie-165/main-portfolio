@@ -6,6 +6,7 @@ import Details from "../Components/Details";
 import Footer from "../Components/Footer";
 import Works from "../Components/Works";
 import { Link } from "react-router";
+import TextType from "../TextType";
 
 const LandingPage = ({ Info }) => {
   return (
@@ -20,9 +21,23 @@ const LandingPage = ({ Info }) => {
           Available for junior dev role
         </div>
         <div className="flex items-center font-bold text-2xl md:text-5xl py-6">
-          <span className="inline-block leading-[1.3] pb-1 animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-secondary to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl md:text-7xl text-transparent">
-            Momodou Barry Software Engineer
-          </span>
+          <TextType
+            text={[
+              "MOMODOU WURRIE BARRY",
+              "Junior Developer",
+              "Software Engineer",
+            ]}
+            textColors={["oklch(0.78 0.12 227.37)"]}
+            typingSpeed={50}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="..."
+            deletingSpeed={50}
+            variableSpeedEnabled={false}
+            variableSpeedMin={60}
+            variableSpeedMax={120}
+            cursorBlinkDuration={0.5}
+          />
         </div>
         <p className="text-center max-w-2xl">
           Final year Computer Science student at KNUST. Building the future with
