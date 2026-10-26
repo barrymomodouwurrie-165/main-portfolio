@@ -6,7 +6,7 @@ import {
   FaShareAlt,
   FaArrowRight,
 } from "react-icons/fa";
-import Map from "../assets/map.png";
+import Map from "../assets/current-location.png";
 import { Link } from "react-router";
 
 const ContactDetails = () => {
@@ -79,9 +79,9 @@ const ContactDetails = () => {
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-xl">Nexus Point</span>
                 <span className={`text-base-content/70`}>
-                  KNUST Campus, Kumasi, Ghana
+                  Manjai Kunda, Serekunda, The Gambia
                 </span>
-                <p className="text-blue-600">6.6748° N, 1.5716° W</p>
+                <p className="text-blue-600">13°26'40.69"N 16°41'40.38"W</p>
               </div>
             </div>
           </div>
