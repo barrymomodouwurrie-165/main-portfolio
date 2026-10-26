@@ -11,7 +11,7 @@ const Descriptions = () => {
     { id: "2", name: "university", content: "KNUST" },
     { id: "3", name: "major", content: "computer science" },
     { id: "4", name: "degree", content: "Bachelors degree" },
-    { id: "5", name: "status", content: "Final Year" },
+    { id: "5", name: "status", content: "Completed✅" },
     { id: "6", name: "focus", content: ["Software Engineering", " &", " AI"] },
   ];
   const Milestones = [
@@ -33,10 +33,18 @@ const Descriptions = () => {
     },
     {
       id: "3",
-      date: "current",
-      title: "Final Year Project Phase",
+      date: "2025/26",
+      title: "Final Year Project",
       content:
         "An intelligent embedded security system that combines multi-factor authentication, real-time sensor correlation, and AI-based threat classification with an offline encrypted logging mechanism and a live web dashboard, in order to provide a resilient, affordable, and unbiased alternative to conventional single-factor access-control systems.",
+      color: "Green",
+    },
+    {
+      id: "4",
+      date: "current",
+      title: "Working on a School Management System",
+      content:
+        "A school management web app for a junior and senior secondary school, built to streamline admin, teacher, and student workflows such as registration, attendance, results, announcements, and school communication from one connected dashboard.",
       color: "Orange",
     },
   ];
@@ -45,11 +53,13 @@ const Descriptions = () => {
     Purple: "border-purple-600 text-purple-600",
     Blue: "border-blue-600 text-blue-600",
     Orange: "border-orange-600 text-orange-600",
+    Green: "border-green-600 text-green-600",
   };
   const TextColors = {
     Purple: "text-purple-600",
     Blue: "text-blue-600",
     Orange: "text-orange-600",
+    Green: "text-green-600",
   };
   return (
     <div className="max-w-5xl mx-auto px-2 py-6">
